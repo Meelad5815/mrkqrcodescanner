@@ -49,52 +49,20 @@
   }
 }
 
-/* html5-qrcode scanner overrides */
-#reader {
+/* html5-qrcode overrides */
+#qr-reader {
   border: none !important;
-  border-radius: 0.75rem;
-  overflow: hidden;
 }
 
-#reader video {
+#qr-reader video {
   border-radius: 0.75rem;
+  object-fit: cover;
 }
 
-#reader__scan_region {
+#qr-reader__scan_region {
   min-height: 250px;
 }
 
-#reader__dashboard {
-  padding: 1rem !important;
-}
-
-#reader__dashboard_section_csr button,
-#reader__dashboard_section_fsr button {
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  background-color: hsl(210, 100%, 50%);
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 0.875rem;
-  font-weight: 500;
-  transition: background-color 0.2s;
-}
-
-#reader__dashboard_section_csr button:hover,
-#reader__dashboard_section_fsr button:hover {
-  background-color: hsl(210, 100%, 40%);
-}
-
-#reader select {
-  padding: 0.375rem 0.5rem;
-  border-radius: 0.375rem;
-  border: 1px solid hsl(var(--border));
-  background-color: hsl(var(--card));
-  color: hsl(var(--card-foreground));
-  font-size: 0.875rem;
-}
-
-#reader__filescan_input {
-  margin: 0.5rem 0;
+#qr-reader img {
+  opacity: 0;
 }
